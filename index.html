@@ -49,9 +49,28 @@
     <!-- background gallery and contact us  #ebf2fc-->
     <!-- background footer  #4d97ff-->
 
+    <!-- Lightbox Overlay -->
+    <div
+      id="lightbox"
+      class="fixed inset-0 bg-black/80 flex items-center justify-center z-50 hidden"
+    >
+      <button
+        id="lightbox-close"
+        class="absolute top-4 right-6 text-4xl font-bold"
+      >
+        <div class="cursor-pointer bg-base-100 rounded-box p-2">&times;</div>
+      </button>
+      <img
+        id="lightbox-img"
+        src=""
+        alt=""
+        class="max-w-[90vw] max-h-[90vh] rounded shadow-2xl"
+      />
+    </div>
+
     <!-- NAVBAR DAISYUI -->
-    <div class="navbar transparent flex justify-around">
-      <div class="navbar flex justify-between">
+    <div id="home" class="navbar transparent flex justify-around">
+      <div class="navbar flex justify-between p-0">
         <div class="dropdown">
           <div
             tabindex="0"
@@ -109,7 +128,7 @@
           </ul>
         </div>
 
-        <div class="flex justify-center w-full lg:justify-start">
+        <div class="flex justify-center w-full lg:justify-start pr-5 lg:p-0">
           <div class="flex flex-col justify-center pr-5 pl-5">
             <h3 class="font-['hurricane'] font-bold text-4xl tracking-wide">
               VONADO
@@ -174,25 +193,6 @@
           the oven every morning.
         </p>
       </div>
-
-      <!-- <div class="hero min-h-screen">
-      <div class="hero-content text-center">
-        <div class="max-w-md">
-          <h1 class="mb-5 text-5xl font-bold">
-            Freshly Baked. Authentically Korean.
-          </h1>
-          <p class="mb-5">
-            Hand-crafted Korean pastries and breads, made fresh every day —
-            right here in the heart of Hanoi.
-          </p>
-          <button class="btn btn-primary">Get Started</button>
-        </div>
-
-        <div class="w-lg">
-          <img src="../croissant-removebg-preview.png" alt="" />
-        </div>
-      </div>
-    </div> -->
     </div>
 
     <!-- WELCOME CARD SECTION DAISYUI-->
@@ -259,23 +259,24 @@
     >
       <div class="max-w-lg pr-5 pl-5 flex items-center">
         <img
-          src="./assets/images/couple-baking.avif"
-          alt="Asian couple baking"
+          loading="lazy"
           class="rounded-sm"
+          src="./assets/images/couple-baking.avif"
+          alt="Vonado bakers smiling while kneading bread dough together in the bakery kitchen in Hanoi"
         />
       </div>
 
       <div class="max-w-md pr-5 pl-5">
         <h2 class="mb-5 text-3xl font-bold text-center">About us</h2>
         <!-- Check text sixe on mobile //CONTINUE -->
-        <p class="text-center text-lg">
+        <p class="text-center text-lg text-justify">
           We started this bakery with one simple dream: to bring the warm,
           comforting flavors of Korea to Hanoi. Every bun, cake, and pastry is
           made from scratch using traditional Korean recipes passed down through
           generations — with a little love added at every step.
         </p>
         <br />
-        <p class="text-center text-lg">
+        <p class="text-center text-lg text-justify">
           Our ingredients are sourced fresh daily, and everything is baked
           in-house so you always get the softest, most flavorful treat possible.
           Whether you're a longtime fan of Korean food or trying it for the
@@ -297,155 +298,166 @@
       id="gallery"
       class="p-4 sm:p-6 md:p-10 lg:p-30 lg:pr-40 lg:pl-40 w-full grid items-center bg-[#ebf2fc]"
     >
-      <div class="max-w-md">
-        <h2 class="mb-5 text-3xl font-bold text-center lg:pb-10">
-          Freshly baked with love
-        </h2>
-      </div>
+      <h2 class="mb-5 lg:pb-10 text-3xl font-bold text-center">
+        Freshly baked with love
+      </h2>
 
       <div
-        class="grid w-full md:w-3/3 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-3 gap-1 place-items-center"
+        id="gallery-container"
+        class="grid w-full md:w-3/3 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-10 lg:pl-20 lg:pr-20 gap-1 place-items-center"
       >
         <div
-          class="w-full hover:scale-105 hover:shadow-2xl transition duration-300"
+          class="w-full hover:scale-105 hover:shadow-2xl transition duration-300 cursor-pointer"
         >
           <figure>
             <img
-              class="rounded-s"
-              src="./assets/images/15.webp"
-              alt="pastry photo"
+              loading="lazy"
+              class="rounded-sm photo-container"
+              src="./assets/images/chocolate-chip-cookies-stacked.webp"
+              alt="Homemade chocolate chip cookies stacked on a marble board at Vonado Korean Bakery in Hanoi"
             />
           </figure>
         </div>
 
         <div
-          class="w-full hover:scale-105 hover:shadow-2xl transition duration-300"
+          class="w-full hover:scale-105 hover:shadow-2xl transition duration-300 cursor-pointer"
         >
           <figure>
             <img
-              class="rounded-sm"
-              src="./assets/images/16.webp"
-              alt="pastry photo"
+              loading="lazy"
+              class="rounded-sm photo-container"
+              src="./assets/images/assorted-pastries-on-table.webp"
+              alt="Assortment of freshly baked Korean pastries and breads displayed on a table at Vonado Bakery in Hanoi"
             />
           </figure>
         </div>
 
         <div
-          class="w-full hover:scale-105 hover:shadow-2xl transition duration-300"
+          class="w-full hover:scale-105 hover:shadow-2xl transition duration-300 cursor-pointer"
         >
           <figure>
             <img
-              class="rounded-sm"
-              src="./assets/images/17.webp"
-              alt="pastry photo"
+              loading="lazy"
+              class="rounded-sm photo-container"
+              src="./assets/images/pile-of-glazed-chocolate-croissants.webp"
+              alt="Pile of freshly baked flaky chocolate croissants at Vonado Cookie and Bread bakery in Hanoi"
             />
           </figure>
         </div>
 
         <div
-          class="w-full hover:scale-105 hover:shadow-2xl transition duration-300"
+          class="w-full hover:scale-105 hover:shadow-2xl transition duration-300 cursor-pointer"
         >
           <figure>
             <img
-              class="rounded-sm"
-              src="./assets/images/18.webp"
-              alt="pastry photo"
+              loading="lazy"
+              class="rounded-sm photo-container"
+              src="./assets/images/artisan-bread-rolls-torn-open-showing-fluffy-inside.webp"
+              alt="Soft fluffy artisan bread roll torn open showing light airy crumb at Vonado Cookie and Bread in Hanoi"
             />
           </figure>
         </div>
 
         <div
-          class="w-full hover:scale-105 hover:shadow-2xl transition duration-300"
+          class="w-full hover:scale-105 hover:shadow-2xl transition duration-300 cursor-pointer"
         >
           <figure>
             <img
-              class="rounded-sm"
-              src="./assets/images/25.webp"
-              alt="pastry photo"
+              loading="lazy"
+              class="rounded-sm photo-container"
+              src="./assets/images/cinnamon-rolls-on-bakery-rack-being-loaded.webp"
+              alt="Baker loading trays of fresh cinnamon rolls into bakery rack oven at Vonado Cookie and Bread in Hanoi"
             />
           </figure>
         </div>
 
         <div
-          class="w-full hover:scale-105 hover:shadow-2xl transition duration-300"
+          class="w-full hover:scale-105 hover:shadow-2xl transition duration-300 cursor-pointer"
         >
           <figure>
             <img
-              class="rounded-sm"
-              src="./assets/images/23.webp"
-              alt="pastry photo"
+              loading="lazy"
+              class="rounded-sm photo-container"
+              src="./assets/images/glazed-Korean-style-round-buns-with-toppings.webp"
+              alt="Korean-style glazed round pastry buns topped with pistachio and raspberry drizzle at Vonado Bakery"
             />
           </figure>
         </div>
 
         <div
-          class="w-full hover:scale-105 hover:shadow-2xl transition duration-300"
+          class="w-full hover:scale-105 hover:shadow-2xl transition duration-300 cursor-pointer"
         >
           <figure>
             <img
-              class="rounded-sm"
-              src="./assets/images/21.webp"
-              alt="pastry photo"
+              class="rounded-sm photo-container"
+              src="./assets/images/raisin-swirl-pastry-and-muffins.webp "
+              alt="Freshly baked raisin swirl pastry and golden muffins at Vonado Korean Bakery in Hanoi"
+              loading="lazy"
             />
           </figure>
         </div>
 
         <div
-          class="w-full hover:scale-105 hover:shadow-2xl transition duration-300"
+          class="w-full hover:scale-105 hover:shadow-2xl transition duration-300 cursor-pointer"
         >
           <figure>
             <img
-              class="rounded-sm"
-              src="./assets/images/26.webp"
-              alt="pastry photo"
+              loading="lazy"
+              class="rounded-sm photo-container"
+              src="./assets/images/baker-scoring-baguette-dough-by-hand.webp"
+              alt="Baker hand-scoring fresh baguette dough before baking at Vonado Korean Bakery in Hanoi"
             />
           </figure>
         </div>
 
         <div
-          class="w-full hover:scale-105 hover:shadow-2xl transition duration-300"
+          class="w-full hover:scale-105 hover:shadow-2xl transition duration-300 cursor-pointer"
         >
           <figure>
             <img
-              class="rounded-sm"
-              src="./assets/images/22.webp"
-              alt="pastry photo"
+              loading="lazy"
+              class="rounded-sm photo-container"
+              src="./assets/images/pink-muffins-stacked-on-wooden-board.webp"
+              alt="Assorted fresh muffins in pink cupcake liners stacked on a wooden board at Vonado Bakery in Hanoi"
             />
           </figure>
         </div>
 
         <div
-          class="w-full hover:scale-105 hover:shadow-2xl transition duration-300"
+          class="w-full hover:scale-105 hover:shadow-2xl transition duration-300 cursor-pointer"
         >
           <figure>
             <img
-              class="rounded-sm"
-              src="./assets/images/24.webp"
-              alt="pastry photo"
+              loading="lazy"
+              class="rounded-sm photo-container"
+              src="./assets/images/artisan-bread-loaves-close-up.webp"
+              alt="Golden crusty artisan bread loaves baked fresh daily at Vonado Cookie and Bread in Hanoi"
             />
           </figure>
         </div>
 
         <div
-          class="w-full hover:scale-105 hover:shadow-2xl transition duration-300"
+          class="w-full hover:scale-105 hover:shadow-2xl transition duration-300 cursor-pointer"
         >
           <figure>
             <img
-              class="rounded-sm"
-              src="./assets/images/20.webp"
-              alt="pastry photo"
+              loading="lazy"
+              class="rounded-sm photo-container"
+              src="./assets/images/freshly-baked-baklava.webp"
+              alt="Freshly baked baklava made at Vonado Cookie and Bread in Hanoi"
             />
           </figure>
         </div>
 
         <div
-          class="w-full hover:scale-105 hover:shadow-2xl transition duration-300"
+          class="w-full hover:scale-105 hover:shadow-2xl transition duration-300 cursor-pointer"
         >
           <figure>
             <img
-              class="rounded-sm"
-              src="./assets/images/19.webp"
-              alt="pastry photo"
+              loading="lazy"
+              class="rounded-sm photo-container"
+              src="./assets/images/cherry-crumble-slice.webp"
+              alt="Freshly baked cherry crumble slice, a dessert featuring a shortbread-like crust, a vibrant cherry fruit filling, and a crumbly topping at Vonado Cookie and Bread in Hanoi"
             />
           </figure>
         </div>
@@ -652,7 +664,7 @@
     <!-- CONTACT US SECTION DAISYUI -->
     <section
       id="contactus"
-      class="p-4 sm:p-6 md:p-10 lg:p-30 lg:pr-40 lg:pl-40 w-full transparent flex justify-center gap-6 bg-[url(/korean-bakery/unzip/transparent_bg/5.png)] bg-cover bg-center"
+      class="p-4 sm:p-6 md:p-10 lg:p-30 lg:pr-40 lg:pl-40 w-full flex justify-center gap-6 bg-[url(./transparent-bg/21.avif)] bg-cover bg-center bg-opacity-40"
     >
       <div
         class="flex flex-col justify-center bg-[#ebf2fc] rounded-box shadow-sm p-5"
@@ -692,11 +704,13 @@
       >
         <div class="text-center w-full flex flex-col">
           <h6 class="footer-title text-center">Logo</h6>
-          <img
-            src="./assets/images/logo-vonado.avif"
-            alt="Vonado logo"
-            class="w-60"
-          />
+          <a href="#home">
+            <img
+              src="./assets/images/logo-vonado.avif"
+              alt="Vonado logo"
+              class="w-60"
+            />
+          </a>
         </div>
 
         <aside class="text-center w-full">
@@ -767,6 +781,7 @@
             </a>
           </div>
         </nav>
+
         <!-- Goodle maps -->
         <div class="w-full md:col-span-3 lg:col-span-1 text-center">
           <h6 class="footer-title">Visit us</h6>
@@ -791,5 +806,6 @@
         <p>Vonado Cookie & Bread Ltd. &#x00A9; 2026 All rights reserved.</p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
