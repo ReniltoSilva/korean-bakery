@@ -10,9 +10,88 @@
   font-style: normal;
 } */
 
-.open-photo {
+/* .open-photo {
   display: block;
   z-index: 100;
   width: 200px;
   background-color: aqua;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.slider {
+  border-radius: 4px;
+  height: 28rem;
+  width: 50%;
+  min-width: 90%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Styles for devices with a screen width of 600px or more (e.g., large phones, portrait tablets) */
+@media screen and (min-width: 600px) {
+  .slider {
+    border-radius: 4px;
+    /* height: 10rem; */
+    width: 50%;
+    min-width: 70%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+/* Styles for devices with a screen width of 768px or more (e.g., landscape tablets) */
+@media screen and (min-width: 768px) {
+  .slider {
+    border-radius: 4px;
+    height: 22rem;
+    /* width: 40%; */
+    min-width: 40%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+/*From perplexity*/
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.arrow-icons {
+  gap: 3rem;
+  width: 50%;
+  height: 3rem;
+  display: flex;
+  bottom: 10px;
+  justify-content: space-between;
+  position: relative;
+  justify-content: center;
+  /* background-color: brown; */
+}
+
+.icon-arrow-right {
+  /* position: relative; */
+  /* bottom: -1.5rem; */
+  display: flex;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  background-color: #f3e08d;
+}
+
+.icon-arrow-left {
+  /* position: relative; */
+  /* bottom: -1.5rem; */
+  display: flex;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  background-color: #f3e08d;
 }

@@ -27,6 +27,8 @@
     />
 
     <title>Vonado - Cookie & Bread</title>
+
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body class="bg-[#fdfaef] font-['Noto_Sans_Jp']">
@@ -255,7 +257,7 @@
     <!-- ABOUT US SECTION DAISYUI -->
     <section
       id="aboutus"
-      class="p-4 md:p-10 lg:p-30 w-full transparent flex flex-col lg:flex-row justify-center items-center gap-6"
+      class="p-5 pt-10 pb-10 md:p-10 lg:p-30 w-full transparent flex flex-col lg:flex-row justify-center items-center gap-6"
     >
       <div class="max-w-lg pr-5 pl-5 flex items-center">
         <img
@@ -293,10 +295,9 @@
     </section>
 
     <!-- PHOTO GALLERY SECTION DAISYUI -->
-    <!-- Fix alignment of gallery to the center //FIXME -->
     <section
       id="gallery"
-      class="p-4 sm:p-6 md:p-10 lg:p-30 lg:pr-40 lg:pl-40 w-full grid items-center bg-[#ebf2fc]"
+      class="pt-10 pb-10 sm:p-6 md:p-10 lg:p-20 lg:pr-40 lg:pl-40 w-full grid items-center bg-[#ebf2fc]"
     >
       <h2 class="mb-5 lg:pb-10 text-3xl font-bold text-center">
         Freshly baked with love
@@ -467,16 +468,16 @@
     <!-- REVIEWS SECTION -->
     <section
       id="reviews"
-      class="p-4 md:p-8 lg:p-30 lg:pr-25 lg:pl-25 w-full grid place-items-center"
+      class="p-5 pt-10 pb-10 md:p-8 lg:p-20 lg:pr-25 lg:pl-25 w-full grid place-items-center"
     >
       <h2 class="mb-5 lg:pb-10 text-3xl font-bold text-center">
         What our customers are saying
       </h2>
 
-      <div
-        class="card-body p-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 text-lg text-justify"
+      <!-- <div
+        class="card-body p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 text-lg text-justify"
       >
-        <div class="card bg-blue-100 p-5 shadow justify-center">
+        <div class="slide slide--1 bg-blue-100 p-5 shadow justify-center">
           <div>
             <p class="pb-5">
               I only got a chocolate chip cookie and some English muffins for
@@ -521,7 +522,7 @@
           </div>
         </div>
 
-        <div class="card bg-blue-100 p-5 shadow justify-center">
+        <div class="slide slide--2 bg-blue-100 p-5 shadow justify-center">
           <div>
             <p class="pb-5">
               This is one of our favourite places to go to for an afternoon
@@ -566,7 +567,7 @@
           </div>
         </div>
 
-        <div class="card bg-blue-100 p-5 shadow justify-center">
+        <div class="slide slide--3 bg-blue-100 p-5 shadow justify-center">
           <div>
             <p class="pb-5">
               You have to check out this bakery if you'd like to try
@@ -612,7 +613,7 @@
           </div>
         </div>
 
-        <div class="card bg-blue-100 p-5 shadow justify-center">
+        <div class="slide slide--4 bg-blue-100 p-5 shadow justify-center">
           <div>
             <p class="pb-5">
               This is one of the most delicious bakeries in Hanoi. They have a
@@ -658,13 +659,303 @@
             </div>
           </div>
         </div>
+      </div> -->
+
+      <div class="slider text-justify shadow-md bg-[#ebf2fc]">
+        <div class="slide flex items-center p-5">
+          <div>
+            <p class="pb-10">
+              I only got a chocolate chip cookie and some English muffins for
+              later, Sat inside at one of the tables and did some Vietnamese
+              homework, and ate the chocolate chip cookie. But before I left I
+              had to buy more cookies cause it was just that good. The best
+              cookies I’ve had in Hanoi yet.
+            </p>
+            <p>Samuel Vanhuss</p>
+            <div class="rating rating-sm">
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default"
+                aria-label="1 star"
+                aria-current="true"
+              />
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default"
+                aria-label="2 star"
+                aria-current="true"
+              />
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default"
+                aria-label="3 star"
+                aria-current="true"
+              />
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default"
+                aria-label="4 star"
+                aria-current="true"
+              />
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default cursor-default"
+                aria-label="5 star"
+                aria-current="true"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="slide flex items-center p-5">
+          <div>
+            <p class="pb-10">
+              This is one of our favourite places to go to for an afternoon
+              snack after school with kids or for some delicious baked goods for
+              a journey. Absolutely delicious is their cheesecake. Their goods
+              are fresh, made with expertise and very affordable. Not least, we
+              appreciate the kindheartedness of the owners and staff.
+            </p>
+            <p>Rahel Thiessen</p>
+            <div class="rating rating-sm">
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default"
+                aria-label="1 star"
+                aria-current="true"
+              />
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default"
+                aria-label="2 star"
+                aria-current="true"
+              />
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default"
+                aria-label="3 star"
+                aria-current="true"
+              />
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default"
+                aria-label="4 star"
+                aria-current="true"
+              />
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default"
+                aria-label="5 star"
+                aria-current="true"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="slide flex items-center p-5">
+          <div>
+            <p class="pb-10">
+              You have to check out this bakery if you'd like to try
+              high-quality bread. Shio Pan (the Japanese sea salt and butter
+              bread) is so damn good. We tried this type of bread on Tour Les
+              Jours in Seoul. Although it was good, the bread in Vonado is even
+              better! This is truly a real deal. You can feel the quality in
+              every bite.
+            </p>
+            <p>Mai Hoang</p>
+            <div class="rating rating-sm">
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default"
+                aria-label="1 star"
+                aria-current="true"
+              />
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default"
+                aria-label="2 star"
+                aria-current="true"
+              />
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default"
+                aria-label="3 star"
+                aria-current="true"
+              />
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default"
+                aria-label="4 star"
+                aria-current="true"
+              />
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default"
+                aria-label="5 star"
+                aria-current="true"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="slide flex items-center p-5">
+          <div>
+            <p class="pb-10">
+              This is one of the most delicious bakeries in Hanoi. They have a
+              wide variety of breads and biscuits, as well as cakes and salads.
+              The mild flavors leave you wanting more. I recommend the
+              five-grain latte, the red bean buns with whipped cream, and the
+              salad. The cakes are also delicious. Considering it's frequented
+              by both Vietnamese and Western customers, it seems like a
+              universally popular shop. The shop isn't very large, so there
+              aren't many tables.
+            </p>
+            <p>Blueberry Hanoi</p>
+            <div class="rating rating-sm">
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default"
+                aria-label="1 star"
+                aria-current="true"
+              />
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default"
+                aria-label="2 star"
+                aria-current="true"
+              />
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default"
+                aria-label="3 star"
+                aria-current="true"
+              />
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default"
+                aria-label="4 star"
+                aria-current="true"
+              />
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#000000]"
+                aria-label="5 star"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="slide flex items-center p-5">
+          <div>
+            <p class="pb-10">
+              We took a detour going home to stop by this bakery and glad we did
+              because their baked goods are delicious! We almost bought one of
+              everything. 😋 The shop was clean and the owner is super friendly.
+              She told us she will be opening another shop, but I forgot to ask
+              where. 😅 I highly recommend trying their baked goods when
+              visiting Hanoi!!
+            </p>
+            <p>Celina N</p>
+            <div class="rating rating-sm">
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default"
+                aria-label="1 star"
+                aria-current="true"
+              />
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default"
+                aria-label="2 star"
+                aria-current="true"
+              />
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default"
+                aria-label="3 star"
+                aria-current="true"
+              />
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default"
+                aria-label="4 star"
+                aria-current="true"
+              />
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default"
+                aria-label="5 star"
+                aria-current="true"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="slide flex items-center p-5">
+          <div>
+            <p class="pb-10">
+              In Hanoi, the best value cookie spot that best suits Korean
+              palates is truly Bonado. While most high-quality and delicious
+              dessert cookies cost between 50,000 and 60,000 VND, the ones here
+              are around 20,000 VND, and personally, I think this price range is
+              actually justified. (I assume the high prices are mostly due to
+              rent, but even so...) Nevertheless, the taste is truly better than
+              any other bakery. Of course, their other breads and cakes are also
+              quite good value, but this is the number one place for cookies.
+              They are closed on Sundays, so whenever I go early on a Saturday,
+              I buy a huge amount and stock it in the freezer to eat.
+            </p>
+            <p>YJnR</p>
+            <div class="rating rating-sm">
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default"
+                aria-label="1 star"
+                aria-current="true"
+              />
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default"
+                aria-label="2 star"
+                aria-current="true"
+              />
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default"
+                aria-label="3 star"
+                aria-current="true"
+              />
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default"
+                aria-label="4 star"
+                aria-current="true"
+              />
+              <input
+                name="rating-6"
+                class="mask mask-star-2 bg-[#f3e08d] cursor-default"
+                aria-label="5 star"
+                aria-current="true"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="arrow-icons">
+        <div class="icon-arrow-left">
+          <img src="./assets/icons/keyboard_arrow_left.svg" alt="" />
+        </div>
+        <div class="icon-arrow-right">
+          <img src="./assets/icons/keyboard_arrow_right.svg" alt="" />
+        </div>
       </div>
     </section>
 
     <!-- CONTACT US SECTION DAISYUI -->
     <section
       id="contactus"
-      class="p-4 sm:p-6 md:p-10 lg:p-30 lg:pr-40 lg:pl-40 w-full flex justify-center gap-6 bg-[url(./transparent-bg/21.avif)] bg-cover bg-center bg-opacity-40"
+      class="p-5 pt-10 pb-10 sm:p-6 md:p-10 lg:p-30 lg:pr-40 lg:pl-40 w-full flex justify-center gap-6 bg-[url(./assets/images/bg_test3.png)] bg-center bg-cover"
     >
       <div
         class="flex flex-col justify-center bg-[#ebf2fc] rounded-box shadow-sm p-5"
