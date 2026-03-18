@@ -1,3 +1,29 @@
+/* NAVBAR INTERSECTIONOBSERVER */
+const navbar = document.querySelector(".navbar");
+const hero = document.querySelector(".hero");
+const aboutus = document.querySelector("#aboutus");
+
+const obsCallback = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      navbar.classList.add("observer");
+    } else if (entry.isIntersecting) {
+      navbar.classList.remove("observer");
+    }
+  });
+};
+
+const obsOptions = {
+  root: null, // defaults to the browser viewport
+  rootMargin: "0px",
+  threshold: 0, // Triggers when 50% is visible
+};
+
+const observer = new IntersectionObserver(obsCallback, obsOptions);
+
+observer.observe(hero);
+
+/* GALLERY PHOTO OVERLAY */
 const photoContainer = document.querySelectorAll(".photo-container");
 const lightbox = document.querySelector("#lightbox");
 const lightboxCloseButton = document
@@ -12,9 +38,11 @@ photoContainer.forEach((item) => {
   item.addEventListener("click", () => {
     lightbox.classList.remove("hidden");
     lightbox.lastElementChild.attributes.src.value = item.attributes.src.value;
+    lightbox.lastElementChild.attributes.alt.value = item.attributes.alt.value;
   });
 });
 
+/* SLIDES FROM REVIEWS SECTION */
 // CONTINUE - FINISH SLIDE COMPONENT
 // const backwardButton = document.querySelector(".backwardButton");
 // const forwardButton = document.querySelector(".forwardButton");
@@ -100,3 +128,30 @@ const autoSlide = () => {
 };
 
 autoSlide();
+
+/* CONTACT US */
+
+const nameInput = document.querySelector("#name");
+const phone = document.querySelector("#phone");
+const textarea = document.querySelector(".textarea");
+const sendBtn = document
+  .querySelector(".btn-send")
+  .addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log(nameInput.value);
+    console.log(phone.value);
+    console.log(textarea.value);
+
+    nameInput.value = "";
+    phone.value = "";
+    textarea.value = "";
+  });
+
+/* FOOTER */
+
+const currentYear = document.querySelector(".currentYear");
+
+document.addEventListener("DOMContentLoaded", () => {
+  const yearNow = new Date().getFullYear();
+  currentYear.innerText = yearNow;
+});
