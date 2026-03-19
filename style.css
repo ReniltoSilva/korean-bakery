@@ -21,6 +21,12 @@ html {
   scroll-behavior: smooth;
 }
 
+.no-scroll {
+  overflow: hidden; /* Hides the scrollbar */
+  /* position: fixed;  */
+  width: 100%; /* Ensures full width */
+}
+
 .slider {
   border-radius: 4px;
   height: 28rem;
