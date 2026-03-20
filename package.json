@@ -1,0 +1,29 @@
+{
+  "name": "korean-bakery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./style.css -o ./dist.css --watch",
+    "build": "npx @tailwindcss/cli -i ./style.css -o ./dist.css --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReniltoSilva/korean-bakery.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReniltoSilva/korean-bakery/issues"
+  },
+  "homepage": "https://github.com/ReniltoSilva/korean-bakery#readme",
+  "devDependencies": {
+    "daisyui": "^5.5.19",
+    "tailwindcss": "^4.2.2"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.2"
+  }
+}

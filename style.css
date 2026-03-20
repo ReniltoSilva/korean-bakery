@@ -1,12 +1,59 @@
+/* ===== LOCAL FONTS ===== */
 
+/* Charm */
+@font-face {
+  font-family: "Charm";
+  src: url("./fonts/Charm/Charm-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Charm";
+  src: url("./fonts/Charm/Charm-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Hurricane */
+@font-face {
+  font-family: "Hurricane";
+  src: url("./fonts/Hurricane/Hurricane-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Noto Sans JP */
+@font-face {
+  font-family: "Noto Sans JP";
+  src: url("./fonts/Noto_Sans_JP/NotoSansJP-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans JP";
+  src: url("./fonts/Noto_Sans_JP/NotoSansJP-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ===== TAILWIND ===== */
+@import "tailwindcss";
+@plugin "daisyui";
 
 html {
   scroll-behavior: smooth;
 }
 
 .no-scroll {
-  overflow: hidden; 
-  width: 100%; /
+  overflow: hidden;
+  width: 100%;
 }
 
 .slider {
@@ -73,10 +120,7 @@ html {
 }
 
 .icon-arrow-left {
-  /* position: relative; */
-  /* bottom: -1.5rem; */
   display: flex;
-  /* justify-content: center; */
   cursor: pointer;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
   border-radius: 50%;
@@ -90,7 +134,7 @@ html {
   border-bottom: 1px solid #e9cf5c;
 }
 
-.footer-divider{
+.footer-divider {
   border-top: 1px white solid;
   padding-top: 10px;
 }

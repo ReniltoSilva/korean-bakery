@@ -96,7 +96,7 @@ const autoSlide = () => {
   }, 10000);
 };
 
-// autoSlide();
+autoSlide();
 
 /* CONTACT US */
 const nameInput = document.querySelector("#name");

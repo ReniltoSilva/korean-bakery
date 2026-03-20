@@ -10,28 +10,30 @@
       Authentic flavors, warm atmosphere. Find us in Hanoi!"
     />
 
-    <!-- Google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Hurricane&family=Noto+Sans+JP:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-
     <!-- Tailwind + DaisyUI via CDN-->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="dist.css" />
+
+    <!-- Favicon -->
     <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@5"
-      rel="stylesheet"
-      type="text/css"
+      rel="icon"
+      type="image/png"
+      href="./favicon/favicon-96x96.png"
+      sizes="96x96"
     />
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Vonado" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
 
     <title>Vonado - Cookie & Bread</title>
-
-    <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body class="bg-[#fdfaef] font-['Noto_Sans_Jp']">
+  <body class="bg-[#fdfaef]">
     <!-- Background styling -->
     <!-- <div
       style="
@@ -766,14 +768,13 @@
       class="p-5 pt-15 pb-15 md:p-10 lg:p-30 lg:pr-40 lg:pl-40 w-full flex justify-center gap-6 bg-[url(./assets/images/background-pastries-contact-section.webp)] bg-cover"
     >
       <div
-        class="flex flex-col justify-center bg-[#e3f0ff] rounded-box shadow-sm p-3 pt-2 pb-2 lg:p-5 w-xs lg:w-md"
+        class="flex flex-col justify-center bg-[#e3f0ff] rounded-box shadow-sm p-4 pt-2 pb-2 lg:p-5 w-xs lg:w-md"
       >
-        <h2 class="mb-5 text-3xl font-bold text-center">Contact us</h2>
+        <h2 class="mb-2 text-3xl font-bold text-center">Contact us</h2>
 
-        <!-- FIX this disable resizing -->
         <form>
           <fieldset class="fieldset">
-            <label for="name" class="label">Name </label>
+            <label for="name" class="label text-lg">Name </label>
             <input
               id="name"
               class="input w-full"
@@ -781,7 +782,7 @@
               placeholder="Your name"
             />
 
-            <label for="phone" class="label">Phone </label>
+            <label for="phone" class="label text-lg">Phone </label>
             <input
               id="phone"
               class="input w-full"
@@ -795,7 +796,9 @@
               required
             ></textarea>
 
-            <button class="btn mt-4 btn-send bg-[#16447a] text-neutral-100">
+            <button
+              class="btn mt-4 btn-send bg-[#16447a] text-neutral-100 text-lg"
+            >
               Send
             </button>
           </fieldset>
@@ -840,13 +843,9 @@
         </div>
 
         <aside class="text-center w-full">
-          <h6 class="footer-title">Contact us</h6>
+          <h6 class="footer-title text-lg">Contact us</h6>
 
-          <p class="text-lg">
-            If you have any
-            <br />
-            questions, contact us at:
-          </p>
+          <p class="text-lg">For specific queries, contact us at:</p>
 
           <address class="text-lg">
             <a href="mailto:support@vonado.com">support@vonado.com</a>
@@ -863,7 +862,7 @@
         </aside>
 
         <nav class="text-center w-full">
-          <h6 class="footer-title">Working hours</h6>
+          <h6 class="footer-title text-lg">Working hours</h6>
 
           <div class="flex justify-center">
             <div class="flex flex-col pb-5 text-lg">
@@ -880,7 +879,7 @@
 
         <!-- Goodle maps -->
         <div class="w-full md:col-span-3 lg:col-span-1 text-center">
-          <h6 class="footer-title">Visit us</h6>
+          <h6 class="footer-title text-lg">Visit us</h6>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.2177319286743!2d105.79582190963262!3d21.063964286489828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab93cbfb3f85%3A0x5fd40baaa43883a3!2sVONADO%20Cookie%20%26%20Bread!5e0!3m2!1sen!2sus!4v1773079988543!5m2!1sen!2sus"
             width="100%"
