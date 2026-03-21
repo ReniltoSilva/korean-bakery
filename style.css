@@ -1,5 +1,4 @@
 /* ===== LOCAL FONTS ===== */
-
 /* Charm */
 @font-face {
   font-family: "Charm";
@@ -84,7 +83,6 @@ html {
   .slider {
     border-radius: 4px;
     height: 22rem;
-    /* width: 40%; */
     min-width: 40%;
     margin: 0 auto;
     position: relative;

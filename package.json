@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/ReniltoSilva/korean-bakery#readme",
   "devDependencies": {
-    "daisyui": "^5.5.19",
+    "daisyui": "^4.12.24",
     "tailwindcss": "^4.2.2"
   },
   "dependencies": {
